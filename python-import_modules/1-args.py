@@ -8,7 +8,6 @@ if num == 0:
     print("{}: {}".format(num, sys.argv)) 
 if num == 1:
     print("{} argument.".format(num))  
-    print("{}: {}".format(num, sys.argv)) 
 else:
     print("{} argument.".format(num)) 
     print("{}: {}".format(num, sys.argv)) 

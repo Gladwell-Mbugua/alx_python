@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
 def pow(a, b):
-    result = a ** b
-    return result
+    return a ^ b
+
+print("pow('2, 2)")
+print("pow('98, 2)")
+print("pow('100, -2)")
+print("pow('-4, 5)")
+
+pow("a", "b")
