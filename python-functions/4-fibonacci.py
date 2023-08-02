@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env/python3
 def fibonacci_sequence(n):
     sequence = [0, 1]  # Initializing the first two terms of the Fibonacci sequence
 
@@ -7,8 +7,3 @@ def fibonacci_sequence(n):
         sequence.append(next_term)
 
     return sequence
-
-print("{}".format(fibonacci_sequence(6)))
-print("{}".format(fibonacci_sequence(1)))
-print("{}".format(fibonacci_sequence(0)))
-print("{}".format(fibonacci_sequence(20)))
