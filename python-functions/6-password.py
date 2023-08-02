@@ -1,4 +1,5 @@
 #!/usr/bin/env/python3
+
 def validate_password(password):
     # Check minimum length
     if len(password) < 8:

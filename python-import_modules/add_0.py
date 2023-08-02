@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def add(a, b):
-    
-    return (a + b)
-add()
-
+    result = a + b
+    return result
+add ()
