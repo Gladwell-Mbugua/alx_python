@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env/python3
 def validate_password(password):
     # Check minimum length
     if len(password) < 8:
@@ -17,8 +17,3 @@ def validate_password(password):
         return False
 
     return True  # If all criteria are met, return True
-
-print(validate_password("Password123"))
-print(validate_password("abc123"))
-print(validate_password("Password 123"))
-print(validate_password("password123"))
