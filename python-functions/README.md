@@ -1,1 +1,1 @@
-This is introduction to python.
+This is introduction to python functions.
