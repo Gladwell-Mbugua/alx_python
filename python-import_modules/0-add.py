@@ -5,9 +5,9 @@ from add_0 import add
 a = 1
 b = 2
 
-def main():
+def add():
     result = add(a, b)
-    print("{} + {} = {}".format(a, b, result), end="\n")
+    if __name__ == "__main__":
+     print("{} + {} = {}".format(a, b, result), end="\n")
 
-if __name__ == "__main__":
-    main()
+
