@@ -19,13 +19,25 @@ class Square:
     "In this implementation, the __init__ method takes an optional parameter size, which is assigned to the private instance attribute __size. It performs the necessary checks to ensure that size is an integer and is greater than or equal to 0, raising appropriate exceptions if the conditions are not met."
 
     def __init__(self, size=0):
-        if not isinstance(type(size), int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >=0")
-        else:
-            self.size = size
+        self.__size = size
 
+    @property
+    def size(self):
+        return self.__size
+    
+    @size.setter
+    def size(self, value):
+        if type(value)is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must ba >= 0")
+        else:
+            self.__size = value
 
     def area(self):
-        return self.size ** 2
+        return self.size **2
+
+
+
+
+   
