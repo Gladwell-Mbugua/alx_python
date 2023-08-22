@@ -15,7 +15,10 @@ def main():
     else:
         print(".", end="")
 
-    print()
+        print()
+        return
+
+    print(":")
 
     for i, arg in enumerate(args, start=1):
         print(f"{i}: {arg}")
