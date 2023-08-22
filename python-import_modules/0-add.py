@@ -7,9 +7,6 @@ b = 2
 
 def main():
     result = add(a, b)
-
-if __name__ == "__main__":
-     print("{} + {} = {}".format(a, b, "result"), end="\n")
-     print("{} + {} = {}".format(a, b, "result"), end="\n")
+print("{} + {} = {}".format(a, b, "result"), end="\n")     
 if __name__ == "__main__":
     main()
