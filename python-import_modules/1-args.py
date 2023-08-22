@@ -9,19 +9,16 @@ def main():
 
     print(f"Number of argument(s): {num_args}", end="")
     if num_args == 1:
-        print(" followed by argument:", end="")
+        print("{} argument:".format(num_args), end="")
     elif num_args > 1:
-        print(" followed by arguments:", end="")
+        print("{} arguments:".format(num_args), end="")
     else:
         print(".", end="")
 
     print()
 
     for i, arg in enumerate(args, start=1):
-        print(f"{i}: {arg}")
+        print(f"{i}: {args}")
 
 if __name__ == "__main__":
     main()
-
-
-    
