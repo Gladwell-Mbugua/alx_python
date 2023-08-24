@@ -15,10 +15,13 @@ def main():
     else:
         print(".", end="")
 
-    print()
+        print()
+        return
+
+    print(":")
 
     for i, arg in enumerate(args, start=1):
-        print(f"{i}: {args}")
+        print(f"{i}: {arg}")
 
 if __name__ == "__main__":
     main()
