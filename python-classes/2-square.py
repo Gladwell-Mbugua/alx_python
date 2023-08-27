@@ -8,18 +8,63 @@ if size is less than 0, raise a ValueError exception with the message size must 
 You are not allowed to import any module
 '''
 class Square:
-    "class Square is the blueprint to create a class and an object"
-    " Additionally self, is a keyword that binds the actual value with object"
-    "The self is used to initialize an object and is always called out everytime a new object is created"
-    "In this implementation, the __init__ method takes an optional parameter size, which is assigned to the private instance attribute __size. It performs the necessary checks to ensure that size is an integer and is greater than or equal to 0, raising appropriate exceptions if the conditions are not met."
+    """
+    This class represents a square.
+
+    Attributes:
+        __size (int): The size of the square's sides.
+
+    Methods:
+        __init__(self, size=0): Initializes a new square instance with a given size.
+        area(self): Returns the current square area.
+
+    Usage:
+        To create a square instance, provide the size of the sides as an argument to the constructor.
+        Example:
+        >>> square1 = Square(5)  # Creates a square with sides of size 5
+
+        If no size is provided, the default size is 0.
+        Example:
+        >>> square2 = Square()   # Creates a square with default size 0
+
+        Note:
+        The size must be a non-negative integer value. Otherwise, exceptions will be raised.
+    """
 
     def __init__(self, size=0):
-        if not isinstance(type(size), int):
+        """
+        Initializes a new square instance with a given size.
+
+        Args:
+            size (int): The size of the square's sides. Default is 0.
+
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
+
+        Usage:
+            To create a square instance, provide the size of the sides as an argument.
+            Example:
+            >>> square = Square(5)  # Creates a square with sides of size 5
+
+            If no size is provided, the default size is 0.
+            Example:
+            >>> square = Square()   # Creates a square with default size 0
+
+            Note:
+            The size must be a non-negative integer value. Otherwise, exceptions will be raised.
+        """
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >=0")
-        else:
-            self.__size = size 
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
 
     def area(self):
-        return self.__size ** 2
+        """
+        Returns the current square area.
+
+        Returns:
+            int: The area of the square (size * size).
+        """
+        return self.__size * self.__size
