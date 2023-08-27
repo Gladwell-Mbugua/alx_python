@@ -1,9 +1,12 @@
 #!/usr/bin/env/python3
-# main.py
+# main_program.py
+from variable_load_2 import a
 
 def main():
-    import variable_load_2
-    print(variable_load_2.a)
+    print(a)
 
 if __name__ == "__main__":
     main()
+
+
+    
