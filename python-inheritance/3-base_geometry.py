@@ -1,6 +1,7 @@
 #!/usr/bin/env/python3
-
-
+""" 
+        This is a base class
+"""
 class TypeMetaClass(type):
     """
     This is a metaclass used to represent the class type inorder to eliminate
