@@ -4,8 +4,9 @@ Write an empty class BaseGeometry.
 
 You are not allowed to import any module
 """
-class BaseGeometry:
+
+class BaseGeometry(metaclass=TypeMetaClass):
     """
-    An empty class representing a base geometry.
+    This is a base class
     """
     pass
